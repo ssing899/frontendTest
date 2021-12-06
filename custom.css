@@ -1,0 +1,180 @@
+/*==== styles =====*/
+
+html,body{
+	font-size:12px;
+	font-weight:normal;
+	font-family:"helvetica";
+	line-height: 1.5;
+	margin:0;
+	padding:0;
+}
+.bgColor{
+	background-color: rgb(75,75,75);
+}
+.colorfff{
+	color:#fff;
+}
+header > h4{
+	padding-left:10px;
+	padding-right:10px;
+}
+hr{
+	border-color:rgb(168,168,168);
+}
+.empContainer{
+	display: flex;
+	margin-left: 4px;
+	margin-right:4px;
+}
+.empContainer h4{
+	padding-left:10px;
+	padding-right:10px;
+}
+.lftContainer{
+	flex: 1 0 0;
+	margin:2px;
+	background-color:rgb(189,189,189);
+}
+.midContainer{
+	flex: 2 0 0;
+	margin:2px;
+	background-color:rgb(189,189,189);
+}
+.rhtContainer{
+	flex: 1 0 0;
+	margin:2px;
+	background-color:rgb(189,189,189);
+}
+
+.lftContainer,.midContainer,.rhtContainer{
+	position: relative;
+    width: 100%;
+}
+
+.formRow, .empRow{
+	display: flex;
+    max-width: 100%;
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:10px;
+
+}
+.formLabel{
+	flex: 0 0 45%;
+    max-width: 45%;
+} 
+.formUserInput{
+	flex: 0 0 55%;
+    max-width: 55%;
+	border-radius:3px;
+	border: 1px solid #9f9f9f;
+    background-color: #bdbdbd;
+}
+.form_action--button{
+	position :absolute;
+	bottom:0;
+	width:100%;
+}
+.form_action--button hr{
+	width:100%;
+	display:block;
+}
+.empList{
+	width:100%;
+	margin-top:1em;
+}
+.empList thead{
+	background: rgb(180, 179,179);
+}
+.empList thead th, .empList tbody td{
+	padding: 5px 8px;
+    text-align: left;
+}
+.btnGroup{
+	display: flex;
+    flex-direction: row-reverse;
+	margin:10px;
+}
+.btnSave{
+	background-color:#006fcf;
+	color:#fff;
+	border:none;
+	padding:6px 10px;
+}
+.btnCancel{
+	background:none;
+	color:#006fcf;
+	border:none;
+	padding:6px 10px;
+}
+
+.empLabel{
+	flex: 0 0 25%;
+    max-width: 25%;
+} 
+.empDetails{
+	flex: 0 0 75%;
+    max-width: 75%;
+	font-weight:600;
+	margin:0;
+	padding:0;
+}
+.removeBtn{
+	text-decoration:none;
+	padding-left:10px
+}
+#empMonthSalList tbody td:nth-child(2){
+	text-align:right;
+}
+.empList tbody td input{
+	width:100%;
+}
+.salComponent{
+	margin-top:1em;
+}
+.salrow{
+	display: flex;
+    flex-direction: row;
+	margin-bottom:8px;
+	padding:5px 10px;
+}
+.salComponent > .salrow:first-child{
+    background-color: rgb(180, 179, 179);
+    font-weight: 600;
+	}
+.salrow input{
+	border-radius:3px;
+	border: 1px solid #9f9f9f;
+    background-color: #bdbdbd;
+	padding-left:5px;
+	text-align:center;
+}
+.totlSalrow{
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding: 0px 0px 3.4em;
+}
+.addTotalrow{
+	display:flex;
+	width:100%;
+}
+.addTotalrow label:first-child{
+	width:60%;
+	padding-left: 10px;
+}
+.addTotalrow label:last-child{
+	width:40%;
+	padding-right: 10px;
+	text-align:right;
+}
+.highlight{
+	background-color: rgb(180, 179, 179);
+}
+table td, .empDetails{
+	text-transform:capitalize;
+}
+.formUserInput{
+	padding-left: 5px;
+}

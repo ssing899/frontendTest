@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="custom.css">
+</head>
+<body class="bgColor">
+<header>
+	<h4 class="colorfff">Employee Management</h4>
+</header>
+<section>
+	<div class="empContainer">
+		<div class="lftContainer">
+			<h4>Employee & Monthly Salary</h4>
+			<hr>
+			<table class="empList" id="empMonthSalList" cellpadding="0" cellspacing="0">
+                    
+				<tbody class="text-light">
+
+				</tbody>
+			</table>
+			
+			<div class="totlSalrow">
+				<div class="addTotalrow">
+					<label >Monthly Salary Expense</label>
+					<label id="totlEmpSal"></label>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="midContainer">
+			<h4>Employee Details</h4>
+			<hr>
+			<div class="empRow" id="employeeList">
+				<label for="empName" class="empLabel">Employee Name</label>
+				<p class="empDetails" id="empfullname"></p>
+			</div>
+			<div class="empRow" id="employeeList">
+				<label for="empName" class="empLabel">Department</label>
+				<p class="empDetails" id="empDepartment"></p>
+			</div>
+			<div class="empRow" id="employeeList">
+				<label for="empName" class="empLabel">Joining Date</label>
+				<p class="empDetails" id="joinnDate"></p>
+			</div>
+			
+			<a href="#" onclick="onDelete()" class="removeBtn">Remove Employee</a>
+			 
+			<div class="salComponent">
+				<div class="salrow">
+					<label style="width:50%">Salary Component</label>
+					<label style="width: 25%">Monthly Salary</label>
+					<label style="width: 25%">Annual Salary</label>
+				</div>
+				<div class="salrow">
+					<label style="width:50%">Basic</label>
+					<input id="monthSal" type="text" style="width: 25%"/>
+					<input id="annualSal" type="text" style="width: 25%">
+				</div>
+				<div class="salrow">
+					<label style="width:50%">HRA</label>
+					<input id="monthHra" type="text" style="width: 25%"/>
+					<input id="annualHra" type="text" style="width: 25%">
+				</div>
+			</div>
+			<div class="form_action--button">
+				<div class="salrow">
+					<label style="width:50%">Total CTC</label>
+					<input id="monthTotal" type="text" style="width: 25%" readonly>
+					<input id="annualTotal" type="text" style="width: 25%" readonly>
+				</div>
+				<hr>
+				<div class="btnGroup">
+					<input type="submit" value="Update" onclick="updateRecord()" class="btnSave ">
+					<input type="reset" value="Reset" onclick="resetForm()" class="btnCancel ">
+				</div>
+			</div>
+		</div>
+		<div class="rhtContainer">
+			<h4>Add New Employee</h4>
+			<hr>
+			<div class="addNewEmpBox">
+				<form autocomplete="off" onsubmit="onFormSubmit()" class="form-group">
+                    <div class="formRow">
+                        <label for="empName" class="formLabel">Employee Name</label>
+                        <input type="text" name="empName" class="formUserInput" id="empName">
+                    </div>
+                    <div class="formRow">
+                        <label for="dept" class="formLabel">Department</label>
+						<select name="dept" id="dept" class="formUserInput">
+						  <option value="0">Management</option>
+						  <option value="1">Sales</option>
+						  <option value="2">Engineering</option>
+						  <option value="3">Other</option>
+						</select>
+                    </div>
+                    <div class="formRow">
+                        <label for="joinDate" class="formLabel">Join Date</label>
+                        <input type="date" name="joinDate" id="joinDate" class="formUserInput">
+                    </div>
+                    <div class="formRow">
+                        <label for="annCtc" class="formLabel">Annual CTC</label><br>
+                        <input type="text" name="annCtc" id="annCtc" class="formUserInput">
+                    </div>
+                    <div class="form_action--button">
+						<hr>
+                        <div class="btnGroup">
+							<input type="submit" value="Done" class="btnSave ">
+							<input type="reset" value="Cancel" class="btnCancel ">
+						</div>
+                    </div>
+                </form> 
+			</div>
+		</div>
+	</div>
+</section>
+<script src="indexjs.js"></script>
+<script>
+	//window.onload = insertNameSalary();
+</script>
+</body>
+</html>
